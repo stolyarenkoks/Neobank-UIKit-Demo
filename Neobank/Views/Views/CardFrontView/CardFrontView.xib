@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HTB-vu-voz" customClass="CardFrontView" customModule="Neobank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="303"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="platinum-card-front-large-icon" translatesAutoresizingMaskIntoConstraints="NO" id="VfH-C3-NaI">
+                    <rect key="frame" x="16" y="0.0" width="397" height="269"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konstantin Stolyarenko" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA5-Q6-OzH">
+                    <rect key="frame" x="35" y="204" width="311" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="sPk-IA-arf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neobank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEY-Hs-zbV">
+                    <rect key="frame" x="35" y="40" width="93.5" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="3Iw-0J-idF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="20"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="FYB-G3-nuL"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FYB-G3-nuL" firstAttribute="trailing" secondItem="VfH-C3-NaI" secondAttribute="trailing" constant="16" id="0lX-OG-IyC"/>
+                <constraint firstItem="VfH-C3-NaI" firstAttribute="leading" secondItem="FYB-G3-nuL" secondAttribute="leading" constant="16" id="9JS-FL-z9t"/>
+                <constraint firstItem="VfH-C3-NaI" firstAttribute="bottom" secondItem="FYB-G3-nuL" secondAttribute="bottom" id="JwE-iM-jjN"/>
+                <constraint firstItem="dEY-Hs-zbV" firstAttribute="leading" secondItem="HTB-vu-voz" secondAttribute="leading" constant="35" id="b09-qC-7HX"/>
+                <constraint firstItem="FYB-G3-nuL" firstAttribute="bottom" secondItem="tA5-Q6-OzH" secondAttribute="bottom" constant="40" id="eHl-0r-5zp"/>
+                <constraint firstItem="FYB-G3-nuL" firstAttribute="trailing" secondItem="tA5-Q6-OzH" secondAttribute="trailing" constant="83" id="fG6-TS-Osw"/>
+                <constraint firstItem="dEY-Hs-zbV" firstAttribute="top" secondItem="HTB-vu-voz" secondAttribute="top" constant="40" id="nZl-lP-Zs2"/>
+                <constraint firstItem="VfH-C3-NaI" firstAttribute="top" secondItem="HTB-vu-voz" secondAttribute="top" id="udQ-Uy-n48"/>
+                <constraint firstItem="tA5-Q6-OzH" firstAttribute="leading" secondItem="FYB-G3-nuL" secondAttribute="leading" constant="35" id="vA2-mw-nvQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="VfH-C3-NaI" id="lhM-4O-Jtk"/>
+                <outlet property="holderNameLabel" destination="tA5-Q6-OzH" id="1Dk-It-fjS"/>
+                <outlet property="logoLabel" destination="dEY-Hs-zbV" id="cZP-NT-Qmq"/>
+            </connections>
+            <point key="canvasLocation" x="-197.82608695652175" y="184.48660714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="platinum-card-front-large-icon" width="1029" height="648"/>
+    </resources>
+</document>

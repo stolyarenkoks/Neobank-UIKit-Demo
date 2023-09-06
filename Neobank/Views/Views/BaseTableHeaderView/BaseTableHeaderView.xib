@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BaseTableHeaderView" customModule="Stablebank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rbg-9M-eob">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X96-o9-ik1">
+                    <rect key="frame" x="16" y="16" width="37.5" height="18"/>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                    <color key="textColor" red="0.1647058824" green="0.2156862745" blue="0.30196078430000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="X96-o9-ik1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="F1R-Om-xWW"/>
+                <constraint firstItem="Rbg-9M-eob" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TLS-7R-H6o"/>
+                <constraint firstItem="Rbg-9M-eob" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="biB-zh-Jxj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Rbg-9M-eob" secondAttribute="trailing" id="g77-as-Zh9"/>
+                <constraint firstItem="X96-o9-ik1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="jAG-2z-W9q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="X96-o9-ik1" secondAttribute="bottom" constant="16" id="pLW-04-r5O"/>
+                <constraint firstAttribute="bottom" secondItem="Rbg-9M-eob" secondAttribute="bottom" id="xE3-SJ-oT1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerTitleLabel" destination="X96-o9-ik1" id="50a-jK-ocU"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="-178.125"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
