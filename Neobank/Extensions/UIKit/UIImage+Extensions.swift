@@ -14,33 +14,16 @@ import UIKit
 
 extension UIImage {
 
-    // MARK: - Demo Images
-
-    struct Demo {
-        static let demoGameStoreImage = UIImage(named: "demo-game-store-icon")
-        static let demoUserImage = UIImage(named: "demo-user-icon")
-    }
-
-    // MARK: - TabBar
-
-    struct TabBar {
-        static let cardUnselectedImage = UIImage(named: "tabBar-card-icon-unselected")
-    }
-
     // MARK: - Models
 
     struct Transaction {
-        static let incomingTransactionImage = UIImage(named: "incoming-transaction-icon")
-        static let outgoingTransactionImage = UIImage(named: "outgoing-transaction-icon")
+        static let incomingTransactionImage = UIImage(systemName: "arrow.uturn.down")
+        static let outgoingTransactionImage = UIImage(systemName: "arrow.uturn.forward")
     }
 
     // MARK: - ViewControllers
 
-    struct MainCardsViewController {
-        static let addCardImage = UIImage(named: "add-card-icon")
-    }
-
-    struct CardDetailViewController {
-        static let applePayImage = UIImage(named: "apple-pay-icon")
+    struct CardDetailViewModel {
+        static let applePayImage = UIImage(systemName: "personalhotspot.circle")!
     }
 }

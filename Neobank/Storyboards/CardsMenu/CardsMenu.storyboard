@@ -71,12 +71,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xP3-yl-dmi">
-                                <rect key="frame" x="48" y="155" width="294" height="295"/>
+                                <rect key="frame" x="48" y="156.33333333333337" width="294" height="292"/>
                                 <color key="tintColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="xP3-yl-dmi" secondAttribute="height" multiplier="1:1" id="1QK-sc-5oZ"/>
                                 </constraints>
-                                <imageReference key="image" image="figure.2.and.child.holdinghands" catalog="system" symbolScale="default"/>
+                                <imageReference key="image" image="puzzlepiece" catalog="system" symbolScale="default"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect the card for your child and have the opportunity to simply and quickly provide him with pocket money at any time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzX-JW-VIr">
                                 <rect key="frame" x="24" y="473.33333333333331" width="342" height="57.333333333333314"/>
@@ -207,7 +207,7 @@
     </scenes>
     <resources>
         <image name="building.columns.fill" catalog="system" width="128" height="112"/>
-        <image name="figure.2.and.child.holdinghands" catalog="system" width="128" height="93"/>
+        <image name="puzzlepiece" catalog="system" width="128" height="81"/>
         <systemColor name="systemGray3Color">
             <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

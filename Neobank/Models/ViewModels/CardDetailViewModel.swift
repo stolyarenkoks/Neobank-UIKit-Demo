@@ -25,7 +25,7 @@ extension CardDetailViewModel {
 
     static func mock(title: String = "Apple Pay",
                      subtitle: String? = "Card added",
-                     image: UIImage = UIImage.CardDetailViewController.applePayImage!) -> Self {
+                     image: UIImage = UIImage.CardDetailViewModel.applePayImage) -> Self {
         .init(title: title,
               subtitle: subtitle,
               image: image)

@@ -136,7 +136,7 @@ class CardDetailViewController: BaseViewController {
                                 image: UIImage(systemName: "dollarsign.arrow.circlepath")!),
             CardDetailViewModel(title: "Apple Pay Settings",
                                 subtitle: "Card added",
-                                image: UIImage(systemName: "personalhotspot.circle")!)
+                                image: UIImage.CardDetailViewModel.applePayImage)
         ]
         tableView.reloadData()
     }

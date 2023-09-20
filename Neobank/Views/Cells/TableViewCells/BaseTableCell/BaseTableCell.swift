@@ -40,9 +40,12 @@ class BaseTableCell: UITableViewCell {
     func setupCell(with transactionModel: Transaction) {
         titleLabel.text = transactionModel.title
         subtitleLabel.text = transactionModel.subtitle
-        leftImageView.image = transactionModel.image ?? transactionModel.type.placeholderImage
+        let image = transactionModel.image ?? transactionModel.type.placeholderImage
+        leftImageView.image = image?.applyingSymbolConfiguration(.init(pointSize: 50, weight: .thin, scale: .small))
+        leftImageView.tintColor = (transactionModel.image != nil) ? .darkGunmetalColor : .spanishGrayColor
+
         rightLabel.text = FormattersManager.shared.balanceString(from: transactionModel.amount)
-        rightLabel.textColor = transactionModel.type.textColor
+        rightLabel.textColor = transactionModel.type.color
     }
 
     func setupCell(with viewModel: CardDetailViewModel) {

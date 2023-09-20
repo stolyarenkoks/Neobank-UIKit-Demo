@@ -25,7 +25,7 @@ enum TransactionType {
         }
     }
 
-    var textColor: UIColor {
+    var color: UIColor {
         switch self {
         case .incoming:
             return .ufoGreenColor
