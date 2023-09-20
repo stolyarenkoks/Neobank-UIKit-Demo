@@ -31,7 +31,7 @@ class AwardCollectionViewCell: UICollectionViewCell {
     private func setupView() {
         imageViewContainerView.layer.cornerRadius = imageViewContainerView.frame.size.height / 2
         imageViewContainerView.clipsToBounds = true
-        imageViewContainerView.backgroundColor = .awardsGreyColor
+        imageViewContainerView.backgroundColor = .darkGunmetalColor
         imageViewContainerView.layer.borderWidth = 3.0
 
         imageView.layer.cornerRadius = imageView.frame.size.height / 2
@@ -48,7 +48,7 @@ class AwardCollectionViewCell: UICollectionViewCell {
         let awardImage = award.image ?? placeholderImage
         imageView.image = award.isAchived ? awardImage : placeholderImage
 
-        let color = award.isAchived ? UIColor.awardsGreenColor : .awardsLightGreyColor
+        let color = award.isAchived ? UIColor.middleGreenColor : .onyxBlackColor
         imageViewContainerView.layer.borderColor = color.cgColor
     }
 }

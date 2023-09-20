@@ -134,7 +134,7 @@ class CustomSegmentedControl: UIControl {
             button.tintColor = baseTintColor
             button.imageView?.contentMode = .scaleAspectFit
             button.imageEdgeInsets = UIEdgeInsets(top: .zero, left: .zero, bottom: .zero, right: 16)
-            button.titleLabel?.font = .poppins(.regular, size: 16)
+            button.titleLabel?.font = .systemFont(ofSize: 16.0, weight: .regular)
             button.addTarget(self, action: #selector(segmentButtonTapped(segmentButton:)), for: .touchUpInside)
             buttons.append(button)
         }

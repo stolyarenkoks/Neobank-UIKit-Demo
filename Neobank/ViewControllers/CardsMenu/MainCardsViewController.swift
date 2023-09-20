@@ -46,16 +46,14 @@ class MainCardsViewController: BaseViewController {
     // MARK: - Setup
 
     override func setupUI() {
-        newCardButton.layer.cornerRadius = 12
+        newCardButton.layer.cornerRadius = 20.0
         newCardButton.layer.borderWidth = 1.5
-        newCardButton.layer.borderColor = UIColor.ghostWhiteColor.cgColor
+        newCardButton.layer.borderColor = UIColor.philippineSilverColor.cgColor
+        newCardButton.backgroundColor = .gunmetalColor
         newCardButton.setTitleColor(.ghostWhiteColor, for: .normal)
-        newCardButton.titleLabel?.font = .poppins(.regular, size: 20)
-        newCardButton.setImage(UIImage(systemName: "plus.app")?.applyingSymbolConfiguration(.init(scale: .large)), for: .normal)
+        newCardButton.titleLabel?.font = .systemFont(ofSize: 20.0, weight: .regular)
         newCardButton.tintColor = .ghostWhiteColor
         newCardButton.setTitle(Const.MainCardsViewController.newCardButtonTitle, for: .normal)
-        newCardButton.imageView?.contentMode = .scaleAspectFit
-        newCardButton.imageEdgeInsets = UIEdgeInsets(top: .zero, left: .zero, bottom: .zero, right: 24)
     }
 
     override func setupSettings() {

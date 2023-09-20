@@ -53,7 +53,7 @@ class BaseTableCell: UITableViewCell {
             subtitleLabel.isHidden = true
         }
         leftImageView.image = viewModel.image.applyingSymbolConfiguration(.init(pointSize: 50, weight: .thin, scale: .small))
-        leftImageView.tintColor = .tabBarRedColor
+        leftImageView.tintColor = .fireOpalColor
         rightLabel.isHidden = true
     }
 }

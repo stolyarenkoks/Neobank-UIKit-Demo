@@ -63,7 +63,7 @@ class DemoViewController: BaseViewController {
     private func updateGradient(animated: Bool) {
         let gradientModels = [
             GradientViewModel(color: .philippineSilverColor, position: CGPoint(x: 1, y: .zero)),
-            GradientViewModel(color: .grLightGrayColor, position: CGPoint(x: .zero, y: 1))
+            GradientViewModel(color: .manateeGrayColor, position: CGPoint(x: .zero, y: 1))
         ]
         let colors = gradientModels.map({ $0.color })
         let positions = gradientModels.map({ $0.position })

@@ -275,18 +275,18 @@ class CardsPageViewController: BaseViewController {
         switch pageIndex {
         case 0:
             return [
-                .init(color: .grDarkBlackColor, position: CGPoint(x: .zero, y: 1)),
-                .init(color: .grLightBlackColor, position: CGPoint(x: 1, y: .zero))
+                .init(color: .eerieBlackColor, position: CGPoint(x: .zero, y: 1)),
+                .init(color: .onyxBlackColor, position: CGPoint(x: 1, y: .zero))
             ]
         case 1:
             return [
-                .init(color: .grDarkGrayColor, position: CGPoint(x: .zero, y: 1)),
-                .init(color: .grLightGrayColor, position: CGPoint(x: 1, y: .zero))
+                .init(color: .blackCoralColor, position: CGPoint(x: .zero, y: 1)),
+                .init(color: .manateeGrayColor, position: CGPoint(x: 1, y: .zero))
             ]
         case 2:
             return [
-                .init(color: .grLightGrayColor, position: CGPoint(x: .zero, y: 1)),
-                .init(color: .grDarkGrayColor, position: CGPoint(x: 1, y: .zero))
+                .init(color: .manateeGrayColor, position: CGPoint(x: .zero, y: 1)),
+                .init(color: .blackCoralColor, position: CGPoint(x: 1, y: .zero))
             ]
         default:
             return []

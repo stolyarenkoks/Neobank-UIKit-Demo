@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Poppins-Regular.ttf">
-            <string>Poppins-Regular</string>
-        </array>
-        <array key="Poppins-SemiBold.ttf">
-            <string>Poppins-SemiBold</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CardTableCellReuseIdentifier" rowHeight="86" id="ODZ-cK-2Am" customClass="CardTableCell" customModule="Stablebank" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CardTableCellReuseIdentifier" rowHeight="86" id="ODZ-cK-2Am" customClass="CardTableCell" customModule="Neobank" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="367" height="86"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ODZ-cK-2Am" id="jEE-Pg-1vS">
@@ -29,54 +21,38 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPv-BS-7mv">
                         <rect key="frame" x="16" y="8" width="335" height="70"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QeC-N2-ffR">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QoE-U3-XfN">
                                 <rect key="frame" x="0.0" y="0.0" width="335" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QeC-N2-ffR">
+                                <rect key="frame" x="32" y="0.0" width="271" height="70"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QoE-U3-XfN">
-                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="70"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFe-Pt-1g6">
-                                                <rect key="frame" x="24" y="24" width="119.5" height="22"/>
-                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="YFe-Pt-1g6" secondAttribute="bottom" constant="24" id="3XW-Jg-yMK"/>
-                                            <constraint firstAttribute="trailing" secondItem="YFe-Pt-1g6" secondAttribute="trailing" constant="24" id="aHa-3x-iAG"/>
-                                            <constraint firstItem="YFe-Pt-1g6" firstAttribute="leading" secondItem="QoE-U3-XfN" secondAttribute="leading" constant="24" id="qTG-8e-RMn"/>
-                                            <constraint firstItem="YFe-Pt-1g6" firstAttribute="top" secondItem="QoE-U3-XfN" secondAttribute="top" constant="24" id="qxP-2c-S8F"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72V-bx-Upa">
-                                        <rect key="frame" x="167.5" y="0.0" width="167.5" height="70"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wtf-NE-GYu">
-                                                <rect key="frame" x="24" y="24" width="119.5" height="22"/>
-                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="24"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                        <constraints>
-                                            <constraint firstItem="Wtf-NE-GYu" firstAttribute="top" secondItem="72V-bx-Upa" secondAttribute="top" constant="24" id="5dA-vi-mbR"/>
-                                            <constraint firstAttribute="trailing" secondItem="Wtf-NE-GYu" secondAttribute="trailing" constant="24" id="DIa-fE-ebC"/>
-                                            <constraint firstItem="Wtf-NE-GYu" firstAttribute="leading" secondItem="72V-bx-Upa" secondAttribute="leading" constant="24" id="rI5-t7-PNJ"/>
-                                            <constraint firstAttribute="bottom" secondItem="Wtf-NE-GYu" secondAttribute="bottom" constant="24" id="rcz-LO-pRT"/>
-                                        </constraints>
-                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFe-Pt-1g6">
+                                        <rect key="frame" x="0.0" y="0.0" width="135.5" height="70"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wtf-NE-GYu">
+                                        <rect key="frame" x="135.5" y="0.0" width="135.5" height="70"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="QeC-N2-ffR" firstAttribute="leading" secondItem="LPv-BS-7mv" secondAttribute="leading" id="ABf-hR-sCa"/>
+                            <constraint firstItem="QeC-N2-ffR" firstAttribute="leading" secondItem="LPv-BS-7mv" secondAttribute="leading" constant="32" id="ABf-hR-sCa"/>
                             <constraint firstAttribute="bottom" secondItem="QeC-N2-ffR" secondAttribute="bottom" id="Aen-bd-O6P"/>
-                            <constraint firstAttribute="trailing" secondItem="QeC-N2-ffR" secondAttribute="trailing" id="CNg-eL-v7S"/>
+                            <constraint firstAttribute="trailing" secondItem="QeC-N2-ffR" secondAttribute="trailing" constant="32" id="CNg-eL-v7S"/>
                             <constraint firstItem="QeC-N2-ffR" firstAttribute="top" secondItem="LPv-BS-7mv" secondAttribute="top" id="RpY-Mn-HtH"/>
+                            <constraint firstItem="QoE-U3-XfN" firstAttribute="leading" secondItem="LPv-BS-7mv" secondAttribute="leading" id="S8Q-hM-c7R"/>
+                            <constraint firstItem="QoE-U3-XfN" firstAttribute="top" secondItem="LPv-BS-7mv" secondAttribute="top" id="mzx-k7-2dj"/>
+                            <constraint firstAttribute="trailing" secondItem="QoE-U3-XfN" secondAttribute="trailing" id="pbg-Fg-1bZ"/>
+                            <constraint firstAttribute="bottom" secondItem="QoE-U3-XfN" secondAttribute="bottom" id="siT-iE-5UK"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -91,7 +67,6 @@
             <viewLayoutGuide key="safeArea" id="dK1-2D-hh6"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
-                <outlet property="balanceView" destination="72V-bx-Upa" id="7vI-c6-oET"/>
                 <outlet property="cardBalanceLabel" destination="Wtf-NE-GYu" id="1Bg-dP-mZo"/>
                 <outlet property="cardTitleLabel" destination="YFe-Pt-1g6" id="krf-UZ-AJX"/>
                 <outlet property="containerView" destination="LPv-BS-7mv" id="oZC-Qs-9xc"/>
@@ -101,11 +76,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

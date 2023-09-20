@@ -80,19 +80,26 @@ extension UIColor {
 
     // Grayscale Colors
     static let blackColor = UIColor(hexString: "000000")
+    static let eerieBlackColor = UIColor(hexString: "17141C")
+    static let onyxBlackColor = UIColor(hexString: "33383D")
     static let chineseBlackColor = UIColor(hexString: "0B111B")
+    static let blackCoralColor = UIColor(hexString: "575C68")
     static let darkGunmetalColor = UIColor(hexString: "1C2433")
     static let gunmetalColor = UIColor(hexString: "2A303D")
     static let lightGunmetalColor = UIColor(hexString: "2B313A")
+    static let manateeGrayColor = UIColor(hexString: "9497B5")
+    static let spanishGrayColor = UIColor(hexString: "979797")
     static let philippineSilverColor = UIColor(hexString: "AAAFB8")
     static let ghostWhiteColor = UIColor(hexString: "F7FAFF")
     static let lightCulturedWhiteColor = UIColor(hexString: "F5F7FA")
     static let whiteColor = UIColor(hexString: "ffffff")
 
     // Red Colors
+    static let fireOpalColor = UIColor(hexString: "E85E5C")
 
     // Green Colors
     static let ufoGreenColor = UIColor(hexString: "29CC7C")
+    static let middleGreenColor = UIColor(hexString: "4D9F50")
     static let mediumAquamarine = UIColor(hexString: "69F0AE")
 
     // Blue Colors
@@ -101,22 +108,6 @@ extension UIColor {
     // Orange Colors
     static let fleshColor = UIColor(hexString: "FFECD2")
     static let deepPeachColor = UIColor(hexString: "FCB69F")
-
-    // MARK: - TODO: Refactor Colors
-
-    internal static let grDarkBlackColor = UIColor(red: 0.09, green: 0.08, blue: 0.11, alpha: 1.00)
-    internal static let grLightBlackColor = UIColor(red: 0.20, green: 0.22, blue: 0.24, alpha: 1.00)
-
-    internal static let grDarkGrayColor = UIColor(red: 0.34, green: 0.36, blue: 0.41, alpha: 1.00)
-    internal static let grLightGrayColor = UIColor(red: 0.58, green: 0.60, blue: 0.71, alpha: 1.00)
-
-    internal static let awardsLightGreyColor = UIColor(red: 0.22, green: 0.23, blue: 0.25, alpha: 1.00)
-    internal static let awardsGreyColor = UIColor(red: 0.13, green: 0.14, blue: 0.16, alpha: 1.00)
-    internal static let awardsGreenColor = UIColor(red: 0.30, green: 0.64, blue: 0.31, alpha: 1.00)
-
-    internal static let tabBarRedColor = UIColor(red: 0.91, green: 0.37, blue: 0.36, alpha: 1.00)
-    internal static let tabBarGreyColor = UIColor(red: 0.59, green: 0.59, blue: 0.59, alpha: 1.00)
-    internal static let tabBarLightGrayColor = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1.00)
 }
 
 // MARK: - UIColor Between Color Extension

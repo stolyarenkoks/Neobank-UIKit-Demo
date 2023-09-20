@@ -98,7 +98,7 @@ class CardsMenuPageViewController: BaseViewController {
     }
 
     private func setupSegmentedControl() {
-        segmentedControl.selectorColor = .tabBarRedColor
+        segmentedControl.selectorColor = .fireOpalColor
         segmentedControl.segmentedControlViewModels = MockDataManager.shared.generateSegmentsDataSource()
         segmentedControl.addTarget(self, action: #selector(onChangeOfSegment(_:)), for: .valueChanged)
     }

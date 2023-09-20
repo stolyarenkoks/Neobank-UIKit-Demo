@@ -16,7 +16,6 @@ class CardTableCell: UITableViewCell {
 
     @IBOutlet private var containerView: UIView!
     @IBOutlet private var gradientView: UIView!
-    @IBOutlet private var balanceView: UIView!
     @IBOutlet private var cardTitleLabel: UILabel!
     @IBOutlet private var cardBalanceLabel: UILabel!
 
@@ -43,13 +42,11 @@ class CardTableCell: UITableViewCell {
     // MARK: - Setup
 
     private func setupView() {
-        containerView.layer.cornerRadius = 12
+        containerView.layer.cornerRadius = 20.0
         containerView.clipsToBounds = true
 
-        balanceView.backgroundColor = .gunmetalColor
-
         cardTitleLabel.textColor = .gunmetalColor
-        cardBalanceLabel.textColor = .ghostWhiteColor
+        cardBalanceLabel.textColor = .gunmetalColor
     }
 
     private func setupGradient() {
