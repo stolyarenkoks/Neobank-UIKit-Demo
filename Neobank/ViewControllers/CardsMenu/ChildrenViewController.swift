@@ -8,8 +8,6 @@
 
 import UIKit
 
-// MARK: - TODO: Make one VC with different configurations to replace ChildrenViewController and BusinessViewController
-
 // MARK: - ChildrenViewController
 
 class ChildrenViewController: BaseViewController {

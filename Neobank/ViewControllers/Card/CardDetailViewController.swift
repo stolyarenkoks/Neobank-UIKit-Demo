@@ -119,23 +119,21 @@ class CardDetailViewController: BaseViewController {
         view.layer.borderColor = UIColor.lightCulturedWhiteColor.cgColor
     }
 
-    // MARK: - TODO: Move all strings to Constants
-
     private func setupCardSettings() {
         cardDetails = [
-            CardDetailViewModel(title: "Block Card",
-                                subtitle: "You can always unblock it",
+            CardDetailViewModel(title: Const.CardDetailViewController.blockCardTitle,
+                                subtitle: Const.CardDetailViewController.blockCardSubtitle,
                                 image: UIImage(systemName: "xmark.circle")!),
-            CardDetailViewModel(title: "Online Payments",
-                                subtitle: "Subscription management service",
+            CardDetailViewModel(title: Const.CardDetailViewController.onlinePaymentsTitle,
+                                subtitle: Const.CardDetailViewController.onlinePaymentsSubtitle,
                                 image: UIImage(systemName: "at.circle")!),
-            CardDetailViewModel(title: "Pin Code Settings",
+            CardDetailViewModel(title: Const.CardDetailViewController.pinCodeTitle,
                                 image: UIImage(systemName: "lock.circle")!),
-            CardDetailViewModel(title: "Credit Limit Settings",
-                                subtitle: "Total Credit Limit: 100 000 \(Const.Currency.dollarSymbol)",
+            CardDetailViewModel(title: Const.CardDetailViewController.creditLimitTitle,
+                                subtitle: Const.CardDetailViewController.creditLimitSubtitle,
                                 image: UIImage(systemName: "dollarsign.arrow.circlepath")!),
-            CardDetailViewModel(title: "Apple Pay Settings",
-                                subtitle: "Card added",
+            CardDetailViewModel(title: Const.CardDetailViewController.applePayTitle,
+                                subtitle: Const.CardDetailViewController.applePaySubtitle,
                                 image: UIImage.CardDetailViewModel.applePayImage)
         ]
         tableView.reloadData()

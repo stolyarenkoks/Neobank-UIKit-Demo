@@ -90,9 +90,9 @@ class CardViewController: BaseViewController {
 
         folderButton.layer.cornerRadius = folderButton.frame.size.width / 2
         [refillButton, transferButton, paymentsButton].forEach({ setupRoundedButton(button: $0) })
-        refillButton.setTitle("Refill", for: .normal)
-        transferButton.setTitle("Send", for: .normal)
-        paymentsButton.setTitle("Pay", for: .normal)
+        refillButton.setTitle(Const.CardViewController.refillTitle, for: .normal)
+        transferButton.setTitle(Const.CardViewController.sendTitle, for: .normal)
+        paymentsButton.setTitle(Const.CardViewController.payTitle, for: .normal)
 
         guard let safeAreaTopInset = UIApplication.shared.windows.first?.safeAreaInsets.top else { return }
         let availableHeight = UIScreen.main.bounds.height - safeAreaTopInset

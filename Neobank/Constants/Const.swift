@@ -64,6 +64,9 @@ struct Const {
 
         static let filledStar = "★"
         static let unfilledStar = "☆"
+
+        static let bankName = "Neobank"
+        static let userName = "Konstantin Stolyarenko"
     }
 
     // MARK: - Models
@@ -153,11 +156,29 @@ struct Const {
     struct CardViewController {
         static let bottomSheetMaxHeightOffset: CGFloat = 26.0
         static let buttonsViewHeight: CGFloat = 111.0
+
+        static let refillTitle = "Refill"
+        static let sendTitle = "Send"
+        static let payTitle = "Pay"
     }
 
     struct CardDetailViewController {
         static let bottomSheetMaxHeightOffset: CGFloat = 26.0
         static let buttonsViewHeight: CGFloat = 111.0
+
+        static let blockCardTitle = "Block Card"
+        static let blockCardSubtitle = "You can always unblock it"
+
+        static let onlinePaymentsTitle = "Online Payments"
+        static let onlinePaymentsSubtitle = "Subscription management service"
+
+        static let pinCodeTitle = "Pin Code Settings"
+
+        static let creditLimitTitle = "Credit Limit Settings"
+        static let creditLimitSubtitle = "Total Credit Limit: 100 000 \(Currency.dollarSymbol)"
+
+        static let applePayTitle = "Apple Pay Settings"
+        static let applePaySubtitle = "Card added"
     }
 
     struct DemoViewController {

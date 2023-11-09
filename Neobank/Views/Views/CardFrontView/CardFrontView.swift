@@ -36,10 +36,10 @@ class CardFrontView: UIView {
     private func setupView() {
         backgroundImageView.contentMode = .scaleAspectFit
 
-        holderNameLabel.text = "Neobank"
+        holderNameLabel.text = Const.General.bankName
         logoLabel.textColor = .lightGunmetalColor
 
-        holderNameLabel.text = "Konstantin Stolyarenko".uppercased()
+        holderNameLabel.text = Const.General.userName.uppercased()
         holderNameLabel.textColor = .lightGunmetalColor
     }
 }
