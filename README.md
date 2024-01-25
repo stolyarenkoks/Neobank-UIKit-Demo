@@ -2,9 +2,7 @@
 An example of a mobile bank application with custom Transitions and Animations similar to the Monobank App.
 Developed entirely natively using Swift and UIKit.
 
-![Preview](preview.png)
-
-[Demo Video](demo.mov)
+![Demo](demo.gif)
 
 ## Installation
 The project does not require additional installation, as no dependency manager is currently used.
