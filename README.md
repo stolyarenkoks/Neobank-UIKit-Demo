@@ -33,4 +33,4 @@ GitFlow is strictly enforced on this repository. [GitFlow](https://www.atlassian
 feature -> develop -> master
 
 ## License
-Copyright © November 21, 2025 Konstantin Stolyarenko. All rights reserved.
+Copyright © November 28, 2025 Konstantin Stolyarenko. All rights reserved.
